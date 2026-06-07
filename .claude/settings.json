@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "사용자가 'git commit' 명령을 실행했습니다. 커밋 메시지가 제대로 작성되었는지 확인해주세요. 만약 empty commit message 또는 임시 메시지만 있다면 사용자에게 명확한 한국어 커밋 메시지를 작성하도록 안내하고, 그렇지 않으면 진행을 허용합니다. 커밋 메시지는 한국어로 작성되어야 합니다.",
+            "if": "Bash(git commit*)",
+            "statusMessage": "커밋 메시지 검증 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
