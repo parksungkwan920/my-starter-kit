@@ -1,4 +1,9 @@
 {
+  "enabledMcpjsonServers": [
+    "github",
+    "supabase",
+    "vercel"
+  ],
   "hooks": {
     "PreToolUse": [
       {
